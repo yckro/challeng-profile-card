@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body{
+    background-color: var( --background-color);
+    font-family:'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100%;
+}
+
+.cartao{
+    width: 330px;
+    height: 350px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+hr{
+    width: 100%;
+}
+
+.cartao .perfil{  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.cartao .perfil img{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+
+.cartao .numeros-cartao{
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ p, .counter, .pais{
+    font-weight: 700;
+}
+
+span{
+    color: hsl(227, 10%, 46%);
+}
+
+@media(max-width:320px){
+    .cartao, .numeros-cartao{
+        width: 300px;
+}
+
+}
